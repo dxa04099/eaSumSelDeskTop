@@ -1,0 +1,1331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6465BDDD-2EEE-4829-9308-9095EF683CD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>eParameter.My.MyApplication</StartupObject>
+    <RootNamespace>eParameter</RootNamespace>
+    <AssemblyName>eParameter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>.\</OutputPath>
+    <DocumentationFile>eParameter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>eParameter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cgaji_Par_Gaji_Pokok.designer.vb">
+      <DependentUpon>cgaji_Par_Gaji_Pokok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cgaji_Par_Gaji_Pokok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_DT.designer.vb">
+      <DependentUpon>cGaji_Par_Tunj_DT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_DT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_Esselon.designer.vb">
+      <DependentUpon>cGaji_Par_Tunj_Esselon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_Esselon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cgaji_Par_Tunj_fung.designer.vb">
+      <DependentUpon>cgaji_Par_Tunj_fung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cgaji_Par_Tunj_fung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cgaji_Par_Tunj_fung_Khusus.designer.vb">
+      <DependentUpon>cgaji_Par_Tunj_fung_Khusus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cgaji_Par_Tunj_fung_Khusus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_TKD.designer.vb">
+      <DependentUpon>cGaji_Par_Tunj_TKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_TKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_Umum.designer.vb">
+      <DependentUpon>cGaji_Par_Tunj_Umum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cGaji_Par_Tunj_Umum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coba_Laporan.Designer.vb">
+      <DependentUpon>Coba_Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Coba_Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_Bank.designer.vb">
+      <DependentUpon>cPar_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_Kreditur.designer.vb">
+      <DependentUpon>cPar_Kreditur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_Kreditur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_OPD_3OPD.Designer.vb">
+      <DependentUpon>cPar_OPD_3OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_OPD_3OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_OPD_4Sub_OPD.Designer.vb">
+      <DependentUpon>cPar_OPD_4Sub_OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_OPD_4Sub_OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_OPD_5Sub_Sub_OPD.Designer.vb">
+      <DependentUpon>cPar_OPD_5Sub_Sub_OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_OPD_5Sub_Sub_OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_Penandatangan_Dokumen.designer.vb">
+      <DependentUpon>cPar_Penandatangan_Dokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_Penandatangan_Dokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_Penomoran_Dokumen.designer.vb">
+      <DependentUpon>cPar_Penomoran_Dokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_Penomoran_Dokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_1Provinsi.designer.vb">
+      <DependentUpon>cPar_PKKKKD_1Provinsi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_1Provinsi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_2KabKota.designer.vb">
+      <DependentUpon>cPar_PKKKKD_2KabKota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_2KabKota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_3Kecamatan.designer.vb">
+      <DependentUpon>cPar_PKKKKD_3Kecamatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_3Kecamatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_4KelDesa.designer.vb">
+      <DependentUpon>cPar_PKKKKD_4KelDesa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_PKKKKD_4KelDesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Kegiatan.designer.vb">
+      <DependentUpon>cPar_ProgKeg_Kegiatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Kegiatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Program.designer.vb">
+      <DependentUpon>cPar_ProgKeg_Program.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Program.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Rekening.designer.vb">
+      <DependentUpon>cPar_ProgKeg_Rekening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_ProgKeg_Rekening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_1.designer.vb">
+      <DependentUpon>cPar_RekAkrual_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_2.designer.vb">
+      <DependentUpon>cPar_RekAkrual_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_3.designer.vb">
+      <DependentUpon>cPar_RekAkrual_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_4.designer.vb">
+      <DependentUpon>cPar_RekAkrual_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_5.designer.vb">
+      <DependentUpon>cPar_RekAkrual_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAkrual_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_1.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_2.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_3.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_4.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_5.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_6.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_7.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_8.Designer.vb">
+      <DependentUpon>cPar_RekAPBD_8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_Sumber_Dana.designer.vb">
+      <DependentUpon>cPar_RekAPBD_Sumber_Dana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekAPBD_Sumber_Dana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekLRA_1.Designer.vb">
+      <DependentUpon>cPar_RekLRA_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekLRA_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekLRA_2.Designer.vb">
+      <DependentUpon>cPar_RekLRA_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekLRA_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekLRA_3.Designer.vb">
+      <DependentUpon>cPar_RekLRA_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekLRA_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPar_RekLRA_4.Designer.vb">
+      <DependentUpon>cPar_RekLRA_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPar_RekLRA_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarid_Dalam_KabKota.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarid_Dalam_KabKota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarid_Dalam_KabKota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarid_Dalam_KabKota_Copy.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarid_Dalam_KabKota_Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarid_Dalam_KabKota_Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Dalam_Daerah.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarif_Dalam_Daerah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Dalam_Daerah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Dalam_Daerah_Copy.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarif_Dalam_Daerah_Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Dalam_Daerah_Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Luar_Daerah.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarif_Luar_Daerah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Luar_Daerah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Luar_Daerah_Copy.designer.vb">
+      <DependentUpon>cPerjadin_Par_Tarif_Luar_Daerah_Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cPerjadin_Par_Tarif_Luar_Daerah_Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_Dokumen_Pendukung.Designer.vb">
+      <DependentUpon>d0Tr_Dokumen_Pendukung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_Dokumen_Pendukung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_OPD_DataUmum.designer.vb">
+      <DependentUpon>d0Tr_OPD_DataUmum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_OPD_DataUmum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_OPD_Jabatan_Keuangan.designer.vb">
+      <DependentUpon>d0Tr_OPD_Jabatan_Keuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_OPD_Jabatan_Keuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_Pemda.designer.vb">
+      <DependentUpon>d0Tr_Pemda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_Pemda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_Peraturan.designer.vb">
+      <DependentUpon>d0Tr_Peraturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_Peraturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="d0Tr_Tim_Anggaran.designer.vb">
+      <DependentUpon>d0Tr_Tim_Anggaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="d0Tr_Tim_Anggaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_LogON.designer.vb">
+      <DependentUpon>f_LogON.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f_LogON.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_UserManagement.designer.vb">
+      <DependentUpon>f_UserManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f_UserManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_UserManagementSetServer.designer.vb">
+      <DependentUpon>f_UserManagementSetServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f_UserManagementSetServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_UserManagement_AturSKPD.designer.vb">
+      <DependentUpon>f_UserManagement_AturSKPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f_UserManagement_AturSKPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_UserManagement_GntPasword.designer.vb">
+      <DependentUpon>f_UserManagement_GntPasword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f_UserManagement_GntPasword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlMulai.vb" />
+    <Compile Include="mdlSimpan_Histori.vb" />
+    <Compile Include="MenuUtama.designer.vb">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="par_Sinkronisasi_Data.Designer.vb">
+      <DependentUpon>par_Sinkronisasi_Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="par_Sinkronisasi_Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testrpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testrpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Hitung_Gaji.Designer.vb">
+      <DependentUpon>view_bGaji_Par_Hitung_Gaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Hitung_Gaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bgaji_Par_JaFung_Kel.Designer.vb">
+      <DependentUpon>view_bgaji_Par_JaFung_Kel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bgaji_Par_JaFung_Kel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Jenis_Gaji.Designer.vb">
+      <DependentUpon>view_bGaji_Par_Jenis_Gaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Jenis_Gaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Jenis_Kekurangan.Designer.vb">
+      <DependentUpon>view_bGaji_Par_Jenis_Kekurangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bGaji_Par_Jenis_Kekurangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Agama.Designer.vb">
+      <DependentUpon>view_bPar_Agama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Agama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Dokumen.Designer.vb">
+      <DependentUpon>view_bPar_Dokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Dokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Esselon.Designer.vb">
+      <DependentUpon>view_bPar_Esselon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Esselon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Gol_Pangkat.Designer.vb">
+      <DependentUpon>view_bPar_Gol_Pangkat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Gol_Pangkat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Hubungan_Keluarga.Designer.vb">
+      <DependentUpon>view_bPar_Hubungan_Keluarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Hubungan_Keluarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Indikator.Designer.vb">
+      <DependentUpon>view_bPar_Indikator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Indikator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Jabatan_Keuangan.Designer.vb">
+      <DependentUpon>view_bPar_Jabatan_Keuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Jabatan_Keuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_Guru.Designer.vb">
+      <DependentUpon>view_bPar_Jenis_Guru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_Guru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_SPP.Designer.vb">
+      <DependentUpon>view_bPar_Jenis_SPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_SPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_Tagihan.Designer.vb">
+      <DependentUpon>view_bPar_Jenis_Tagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Jenis_Tagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Jurnal.Designer.vb">
+      <DependentUpon>view_bPar_Jurnal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Jurnal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_OPD_Fungsi.Designer.vb">
+      <DependentUpon>view_bPar_OPD_Fungsi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_OPD_Fungsi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Pendidikan_Akhir.Designer.vb">
+      <DependentUpon>view_bPar_Pendidikan_Akhir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Pendidikan_Akhir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Peraturan.Designer.vb">
+      <DependentUpon>view_bPar_Peraturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Peraturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Perubahan.Designer.vb">
+      <DependentUpon>view_bPar_Perubahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Perubahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_PTKP.Designer.vb">
+      <DependentUpon>view_bPar_PTKP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_PTKP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Status_Kawin.Designer.vb">
+      <DependentUpon>view_bPar_Status_Kawin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Status_Kawin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPar_Status_Pegawai.Designer.vb">
+      <DependentUpon>view_bPar_Status_Pegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPar_Status_Pegawai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_bPerjadin_Par_Kelompok.Designer.vb">
+      <DependentUpon>view_bPerjadin_Par_Kelompok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_bPerjadin_Par_Kelompok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Gaji_Pokok.Designer.vb">
+      <DependentUpon>view_cgaji_Par_Gaji_Pokok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Gaji_Pokok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_DT.Designer.vb">
+      <DependentUpon>view_cGaji_Par_Tunj_DT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_DT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_Esselon.Designer.vb">
+      <DependentUpon>view_cGaji_Par_Tunj_Esselon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_Esselon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Tunj_fung.Designer.vb">
+      <DependentUpon>view_cgaji_Par_Tunj_fung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Tunj_fung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Tunj_fung_Khusus.Designer.vb">
+      <DependentUpon>view_cgaji_Par_Tunj_fung_Khusus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cgaji_Par_Tunj_fung_Khusus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_TKD.Designer.vb">
+      <DependentUpon>view_cGaji_Par_Tunj_TKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_TKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_Umum.Designer.vb">
+      <DependentUpon>view_cGaji_Par_Tunj_Umum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cGaji_Par_Tunj_Umum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Bank.Designer.vb">
+      <DependentUpon>view_cPar_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Kreditur.Designer.vb">
+      <DependentUpon>view_cPar_Kreditur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Kreditur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_OPD_2Bidang.Designer.vb">
+      <DependentUpon>view_cPar_OPD_2Bidang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_OPD_2Bidang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_OPD_3OPD.Designer.vb">
+      <DependentUpon>view_cPar_OPD_3OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_OPD_3OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_OPD_4Sub_OPD.Designer.vb">
+      <DependentUpon>view_cPar_OPD_4Sub_OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_OPD_4Sub_OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_OPD_5Sub_Sub_OPD.Designer.vb">
+      <DependentUpon>view_cPar_OPD_5Sub_Sub_OPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_OPD_5Sub_Sub_OPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Penandatangan_Dokumen.Designer.vb">
+      <DependentUpon>view_cPar_Penandatangan_Dokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Penandatangan_Dokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Penomoran_Dokumen.Designer.vb">
+      <DependentUpon>view_cPar_Penomoran_Dokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Penomoran_Dokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_1Provinsi.Designer.vb">
+      <DependentUpon>view_cPar_PKKKKD_1Provinsi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_1Provinsi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_2KabKota.Designer.vb">
+      <DependentUpon>view_cPar_PKKKKD_2KabKota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_2KabKota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_3Kecamatan.Designer.vb">
+      <DependentUpon>view_cPar_PKKKKD_3Kecamatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_3Kecamatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_4KelDesa.Designer.vb">
+      <DependentUpon>view_cPar_PKKKKD_4KelDesa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_PKKKKD_4KelDesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Potongan_SPM.Designer.vb">
+      <DependentUpon>view_cPar_Potongan_SPM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Potongan_SPM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_Potongan_SPM_Rek.Designer.vb">
+      <DependentUpon>view_cPar_Potongan_SPM_Rek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_Potongan_SPM_Rek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_ProgKeg_Kegiatan.Designer.vb">
+      <DependentUpon>view_cPar_ProgKeg_Kegiatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_ProgKeg_Kegiatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_ProgKeg_Program.Designer.vb">
+      <DependentUpon>view_cPar_ProgKeg_Program.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_ProgKeg_Program.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_cPar_ProgKeg_Rekening.Designer.vb">
+      <DependentUpon>View_cPar_ProgKeg_Rekening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_cPar_ProgKeg_Rekening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_1.Designer.vb">
+      <DependentUpon>view_cPar_RekAkrual_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_2.Designer.vb">
+      <DependentUpon>view_cPar_RekAkrual_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_3.Designer.vb">
+      <DependentUpon>view_cPar_RekAkrual_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_4.Designer.vb">
+      <DependentUpon>view_cPar_RekAkrual_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_5.Designer.vb">
+      <DependentUpon>view_cPar_RekAkrual_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAkrual_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_1.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_2.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_3.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_4.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_5.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_6.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_7.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_8.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_Sumber_Dana.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_Sumber_Dana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_Sumber_Dana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_Wajib_Mengikat.Designer.vb">
+      <DependentUpon>view_cPar_RekAPBD_Wajib_Mengikat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekAPBD_Wajib_Mengikat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_1.Designer.vb">
+      <DependentUpon>view_cPar_RekLRA_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_2.Designer.vb">
+      <DependentUpon>view_cPar_RekLRA_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_3.Designer.vb">
+      <DependentUpon>view_cPar_RekLRA_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_4.Designer.vb">
+      <DependentUpon>view_cPar_RekLRA_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_cPar_RekLRA_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_DaftarSubOPD.designer.vb">
+      <DependentUpon>view_DaftarSubOPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_DaftarSubOPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cgaji_Par_Gaji_Pokok.resx">
+      <DependentUpon>cgaji_Par_Gaji_Pokok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cGaji_Par_Tunj_DT.resx">
+      <DependentUpon>cGaji_Par_Tunj_DT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cGaji_Par_Tunj_Esselon.resx">
+      <DependentUpon>cGaji_Par_Tunj_Esselon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cgaji_Par_Tunj_fung.resx">
+      <DependentUpon>cgaji_Par_Tunj_fung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cgaji_Par_Tunj_fung_Khusus.resx">
+      <DependentUpon>cgaji_Par_Tunj_fung_Khusus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cGaji_Par_Tunj_TKD.resx">
+      <DependentUpon>cGaji_Par_Tunj_TKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cGaji_Par_Tunj_Umum.resx">
+      <DependentUpon>cGaji_Par_Tunj_Umum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_Bank.resx">
+      <DependentUpon>cPar_Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_Kreditur.resx">
+      <DependentUpon>cPar_Kreditur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_OPD_3OPD.resx">
+      <DependentUpon>cPar_OPD_3OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_OPD_4Sub_OPD.resx">
+      <DependentUpon>cPar_OPD_4Sub_OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_OPD_5Sub_Sub_OPD.resx">
+      <DependentUpon>cPar_OPD_5Sub_Sub_OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_Penandatangan_Dokumen.resx">
+      <DependentUpon>cPar_Penandatangan_Dokumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_PKKKKD_1Provinsi.resx">
+      <DependentUpon>cPar_PKKKKD_1Provinsi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_PKKKKD_2KabKota.resx">
+      <DependentUpon>cPar_PKKKKD_2KabKota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_PKKKKD_3Kecamatan.resx">
+      <DependentUpon>cPar_PKKKKD_3Kecamatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_PKKKKD_4KelDesa.resx">
+      <DependentUpon>cPar_PKKKKD_4KelDesa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_ProgKeg_Kegiatan.resx">
+      <DependentUpon>cPar_ProgKeg_Kegiatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_ProgKeg_Program.resx">
+      <DependentUpon>cPar_ProgKeg_Program.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_ProgKeg_Rekening.resx">
+      <DependentUpon>cPar_ProgKeg_Rekening.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAkrual_1.resx">
+      <DependentUpon>cPar_RekAkrual_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAkrual_2.resx">
+      <DependentUpon>cPar_RekAkrual_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAkrual_3.resx">
+      <DependentUpon>cPar_RekAkrual_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAkrual_5.resx">
+      <DependentUpon>cPar_RekAkrual_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAPBD_5.resx">
+      <DependentUpon>cPar_RekAPBD_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAPBD_6.resx">
+      <DependentUpon>cPar_RekAPBD_6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAPBD_7.resx">
+      <DependentUpon>cPar_RekAPBD_7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAPBD_8.resx">
+      <DependentUpon>cPar_RekAPBD_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekAPBD_Sumber_Dana.resx">
+      <DependentUpon>cPar_RekAPBD_Sumber_Dana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekLRA_1.resx">
+      <DependentUpon>cPar_RekLRA_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekLRA_2.resx">
+      <DependentUpon>cPar_RekLRA_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekLRA_3.resx">
+      <DependentUpon>cPar_RekLRA_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPar_RekLRA_4.resx">
+      <DependentUpon>cPar_RekLRA_4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarid_Dalam_KabKota.resx">
+      <DependentUpon>cPerjadin_Par_Tarid_Dalam_KabKota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarid_Dalam_KabKota_Copy.resx">
+      <DependentUpon>cPerjadin_Par_Tarid_Dalam_KabKota_Copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarif_Dalam_Daerah.resx">
+      <DependentUpon>cPerjadin_Par_Tarif_Dalam_Daerah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarif_Dalam_Daerah_Copy.resx">
+      <DependentUpon>cPerjadin_Par_Tarif_Dalam_Daerah_Copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarif_Luar_Daerah.resx">
+      <DependentUpon>cPerjadin_Par_Tarif_Luar_Daerah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cPerjadin_Par_Tarif_Luar_Daerah_Copy.resx">
+      <DependentUpon>cPerjadin_Par_Tarif_Luar_Daerah_Copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_Dokumen_Pendukung.resx">
+      <DependentUpon>d0Tr_Dokumen_Pendukung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_OPD_DataUmum.resx">
+      <DependentUpon>d0Tr_OPD_DataUmum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_OPD_Jabatan_Keuangan.resx">
+      <DependentUpon>d0Tr_OPD_Jabatan_Keuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_Pemda.resx">
+      <DependentUpon>d0Tr_Pemda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_Peraturan.resx">
+      <DependentUpon>d0Tr_Peraturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="d0Tr_Tim_Anggaran.resx">
+      <DependentUpon>d0Tr_Tim_Anggaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_UserManagement.resx">
+      <DependentUpon>f_UserManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_UserManagementSetServer.resx">
+      <DependentUpon>f_UserManagementSetServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_UserManagement_AturSKPD.resx">
+      <DependentUpon>f_UserManagement_AturSKPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_UserManagement_GntPasword.resx">
+      <DependentUpon>f_UserManagement_GntPasword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUtama.resx">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="par_Sinkronisasi_Data.resx">
+      <DependentUpon>par_Sinkronisasi_Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testrpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>testrpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bGaji_Par_Hitung_Gaji.resx">
+      <DependentUpon>view_bGaji_Par_Hitung_Gaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bgaji_Par_JaFung_Kel.resx">
+      <DependentUpon>view_bgaji_Par_JaFung_Kel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bGaji_Par_Jenis_Gaji.resx">
+      <DependentUpon>view_bGaji_Par_Jenis_Gaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bGaji_Par_Jenis_Kekurangan.resx">
+      <DependentUpon>view_bGaji_Par_Jenis_Kekurangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Agama.resx">
+      <DependentUpon>view_bPar_Agama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Dokumen.resx">
+      <DependentUpon>view_bPar_Dokumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Esselon.resx">
+      <DependentUpon>view_bPar_Esselon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Gol_Pangkat.resx">
+      <DependentUpon>view_bPar_Gol_Pangkat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Hubungan_Keluarga.resx">
+      <DependentUpon>view_bPar_Hubungan_Keluarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Indikator.resx">
+      <DependentUpon>view_bPar_Indikator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Jabatan_Keuangan.resx">
+      <DependentUpon>view_bPar_Jabatan_Keuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Jenis_Guru.resx">
+      <DependentUpon>view_bPar_Jenis_Guru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Jenis_SPP.resx">
+      <DependentUpon>view_bPar_Jenis_SPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Jenis_Tagihan.resx">
+      <DependentUpon>view_bPar_Jenis_Tagihan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Jurnal.resx">
+      <DependentUpon>view_bPar_Jurnal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_OPD_Fungsi.resx">
+      <DependentUpon>view_bPar_OPD_Fungsi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Pendidikan_Akhir.resx">
+      <DependentUpon>view_bPar_Pendidikan_Akhir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Peraturan.resx">
+      <DependentUpon>view_bPar_Peraturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Perubahan.resx">
+      <DependentUpon>view_bPar_Perubahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_PTKP.resx">
+      <DependentUpon>view_bPar_PTKP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Status_Kawin.resx">
+      <DependentUpon>view_bPar_Status_Kawin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPar_Status_Pegawai.resx">
+      <DependentUpon>view_bPar_Status_Pegawai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_bPerjadin_Par_Kelompok.resx">
+      <DependentUpon>view_bPerjadin_Par_Kelompok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cgaji_Par_Gaji_Pokok.resx">
+      <DependentUpon>view_cgaji_Par_Gaji_Pokok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cGaji_Par_Tunj_DT.resx">
+      <DependentUpon>view_cGaji_Par_Tunj_DT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cGaji_Par_Tunj_Esselon.resx">
+      <DependentUpon>view_cGaji_Par_Tunj_Esselon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cgaji_Par_Tunj_fung.resx">
+      <DependentUpon>view_cgaji_Par_Tunj_fung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cgaji_Par_Tunj_fung_Khusus.resx">
+      <DependentUpon>view_cgaji_Par_Tunj_fung_Khusus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cGaji_Par_Tunj_TKD.resx">
+      <DependentUpon>view_cGaji_Par_Tunj_TKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cGaji_Par_Tunj_Umum.resx">
+      <DependentUpon>view_cGaji_Par_Tunj_Umum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Bank.resx">
+      <DependentUpon>view_cPar_Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Kreditur.resx">
+      <DependentUpon>view_cPar_Kreditur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_OPD_2Bidang.resx">
+      <DependentUpon>view_cPar_OPD_2Bidang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_OPD_3OPD.resx">
+      <DependentUpon>view_cPar_OPD_3OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_OPD_4Sub_OPD.resx">
+      <DependentUpon>view_cPar_OPD_4Sub_OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_OPD_5Sub_Sub_OPD.resx">
+      <DependentUpon>view_cPar_OPD_5Sub_Sub_OPD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Penandatangan_Dokumen.resx">
+      <DependentUpon>view_cPar_Penandatangan_Dokumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Penomoran_Dokumen.resx">
+      <DependentUpon>view_cPar_Penomoran_Dokumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_PKKKKD_1Provinsi.resx">
+      <DependentUpon>view_cPar_PKKKKD_1Provinsi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_PKKKKD_2KabKota.resx">
+      <DependentUpon>view_cPar_PKKKKD_2KabKota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_PKKKKD_3Kecamatan.resx">
+      <DependentUpon>view_cPar_PKKKKD_3Kecamatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_PKKKKD_4KelDesa.resx">
+      <DependentUpon>view_cPar_PKKKKD_4KelDesa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Potongan_SPM.resx">
+      <DependentUpon>view_cPar_Potongan_SPM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_Potongan_SPM_Rek.resx">
+      <DependentUpon>view_cPar_Potongan_SPM_Rek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_ProgKeg_Kegiatan.resx">
+      <DependentUpon>view_cPar_ProgKeg_Kegiatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_ProgKeg_Program.resx">
+      <DependentUpon>view_cPar_ProgKeg_Program.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_cPar_ProgKeg_Rekening.resx">
+      <DependentUpon>View_cPar_ProgKeg_Rekening.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAkrual_1.resx">
+      <DependentUpon>view_cPar_RekAkrual_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAkrual_2.resx">
+      <DependentUpon>view_cPar_RekAkrual_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAkrual_3.resx">
+      <DependentUpon>view_cPar_RekAkrual_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAkrual_4.resx">
+      <DependentUpon>view_cPar_RekAkrual_4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAkrual_5.resx">
+      <DependentUpon>view_cPar_RekAkrual_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_1.resx">
+      <DependentUpon>view_cPar_RekAPBD_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_2.resx">
+      <DependentUpon>view_cPar_RekAPBD_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_3.resx">
+      <DependentUpon>view_cPar_RekAPBD_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_4.resx">
+      <DependentUpon>view_cPar_RekAPBD_4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_5.resx">
+      <DependentUpon>view_cPar_RekAPBD_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_6.resx">
+      <DependentUpon>view_cPar_RekAPBD_6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_7.resx">
+      <DependentUpon>view_cPar_RekAPBD_7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_8.resx">
+      <DependentUpon>view_cPar_RekAPBD_8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_Sumber_Dana.resx">
+      <DependentUpon>view_cPar_RekAPBD_Sumber_Dana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekAPBD_Wajib_Mengikat.resx">
+      <DependentUpon>view_cPar_RekAPBD_Wajib_Mengikat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekLRA_1.resx">
+      <DependentUpon>view_cPar_RekLRA_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekLRA_2.resx">
+      <DependentUpon>view_cPar_RekLRA_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekLRA_3.resx">
+      <DependentUpon>view_cPar_RekLRA_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cPar_RekLRA_4.resx">
+      <DependentUpon>view_cPar_RekLRA_4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_DaftarSubOPD.resx">
+      <DependentUpon>view_DaftarSubOPD.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOMD">
+      <Guid>{22813728-8BD3-11D0-B4EF-00A0C9138CA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\bgputih.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\cari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\copyData.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\LogoSumsel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\neww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\oke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\proses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\simpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gambar\preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
